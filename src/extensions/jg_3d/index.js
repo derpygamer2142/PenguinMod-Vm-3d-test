@@ -625,10 +625,10 @@ class Jg3DBlocks {
         if (!object) return;
         // const euler = new Three.Euler(toRad(rotation.x), toRad(rotation.y), toRad(rotation.z));
         // object.setRotationFromEuler(euler);
-        const euler = new Three.Euler(0, 0, 0);
+        const euler = new Three.Euler(0, 0, 0, "XYZ");
         object.setRotationFromEuler(euler);
-        object.rotateY(toRad(rotation.y));
         object.rotateX(toRad(rotation.x));
+        object.rotateY(toRad(rotation.y));
         object.rotateZ(toRad(rotation.z));
     }
     setObjectSize(args) {
